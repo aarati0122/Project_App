@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+   <LinearLayout
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:padding="@dimen/activity_horizontal_margin"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="@drawable/irrigation">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_email"
+        android:id="@+id/email"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:inputType="textPassword"
+        android:hint="@string/hint_password"
+        android:id="@+id/password"/>
+
+    <!-- Login Button -->
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/black"
+        android:id="@+id/btn_login"
+        android:text="@string/btn_login"
+        android:layout_marginTop="20dip"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@null"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/btn_reset_password"
+        android:text="@string/btn_forgot_password"
+        android:layout_marginTop="20dip"
+        android:textAllCaps="false"/>
+
+    <!-- Link to Login Screen -->
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@null"
+        tools:ignore="SpUsage"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/btn_signup"
+        android:text="@string/btn_link_to_register"
+        android:layout_marginTop="20dip"
+        android:textAllCaps="false"
+        android:textSize="15dp"/>
+
+</LinearLayout>
+
+<ProgressBar
+    android:layout_height="100dp"
+    android:layout_width="100dp"
+    tools:ignore="MissingConstraints"
+    android:layout_gravity="center|bottom"
+    android:id="@+id/progressBar"
+    tools:layout_editor_absoluteY="162dp"
+    tools:layout_editor_absoluteX="142dp"
+    android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
